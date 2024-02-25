@@ -1,0 +1,300 @@
+%-------------------------
+% Resume in Latex
+% Author : Vaishanth
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}%\setmainfont{Times New Roman}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% \usepackage[T1]{fontenc}
+% \usepackage[T1]{fontenc}
+% \usepackage{cochineal}
+% \usepackage{fourier}
+
+% \usepackage{fontspec}
+% \usepackage{polyglossia}
+% \setmainlanguage{german}
+% \setmainfont{Times New Roman}
+
+% serif
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSingleSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.1in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------\usepackage{fontspec}
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+%----------HEADING----------
+
+
+\begin{center}
+    {\huge Harish Kumar Shivaramappa } \\ \vspace{2pt} 
+    {+39 366 707 5414 / +91 900 808 8227} ~ 
+    \small{-}
+    \small{-}
+    \href{mailto:[harishkumarsedu@gmail.com]}{\color{blue}{harishkumarsedu@gmail.com}} ~ 
+    \small{-}
+    \href{[https://www.linkedin.com/in/harish-kumar-shivaramappa-183292206/]}{ \color{blue}{linkedin}}  ~
+    \small{-}
+    \href{[github.com/HarishKumarSedu]}{ \color{blue}{github}} ~
+    \vspace{-7pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{\color{airforceblue}EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Pavia / Masters}{Pavia, Lombardia, Italy}
+      {Electronics and Computer Science }{Dec/2020 - Dec/2022}
+    \vspace{-4pt}
+     \resumeSubheading
+      {PES University / Batchelors}{Bengaluru, Karnataka, India}
+      {Electronics and Communication Engineering}{July/2016 - March/2019}
+      \vspace{-4pt}
+      \resumeSubheading
+       {SJ Polytechnic / Diploma}{Bengaluru, Karnataka, India}
+       {Electronics and Communication Engineering}{April/2013 - March/2016}
+  \resumeSubHeadingListEnd
+  \vspace{-10pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{\color{airforceblue}TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Programming Languages:}}{ \normalsize{Python, JavaScript, C}} \\
+      \vspace{1.2pt}
+      
+     \textbf{\normalsize{Libraries and Tools:}}{ \normalsize{tensorflow,  Sklearn, Pandas, Numpy, Git, Docker, Scapy, nltk, Scipy,Seaborn, YAML}} \\
+      \vspace{1.2pt}
+      
+     \textbf{\normalsize{ML Architectures:}}{ \normalsize{CNN, Transformers(BERT, LSTM, GRU), GANs, Seq2Seq }}
+      
+     \textbf{\normalsize{GUI/Rest API:}}{ \normalsize{ PyQt, Flask, Fast API, Django }}
+
+     % copy and paste above textbf block to add more 
+     }}
+ \end{itemize}
+ \vspace{-16pt}
+ 
+ %-----------EXPERIENCE-----------
+\section{\color{airforceblue}WORK EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Application Engineer}{} 
+      {\textbf{\textit{Inventvm Semiconductor Srl, Lombardia, Italy}}}{Jan/2022 - Current}
+      \resumeItemListStart
+            \resumeItem{
+              \normalsize{Responsible for developing full-fledge \textbf{Semiconductor Chips Data Analysis/Collection Software Platform} for application and validation engineers.
+               This includes owning complete project and \textbf{\textit{creating distributed Data pipeline, Data visualization/Analysis GUIs}}. 
+               Most noteable project in the organization is \href{[https://github.com/HarishKumarSedu/Franco_FrameWork]}{\color{blue}\underline{Franco}} which is power and audio application, where i have been  software team lead to develope \textbf{\textit{end-end ML/Data project}} for audio application.  
+                }
+              }
+      \resumeItemListEnd  
+
+    \resumeSubheading
+      {Application Engineer}{} 
+      {\textbf{\textit{Analog Devices Inc, Karnataka, India}}}{Jan/2019 - July/2020}
+      \resumeItemListStart
+            \resumeItem{
+              \normalsize{ADI is an
+              estimated institution that offered me an opportunity to handle several projects over a period. I can recall a few notable
+              projects from the organization, CBM (Condition-based Monitoring) for windmills, Burnside California state forest wildfire
+              protection with IoT application, Developing the python-based
+              test bench for wireless product evaluation, and supporting post
+              silicon evaluation for WBMS(wireless BMS) chips. Daily tasks
+              include resolving customer queries related to wireless network
+              hardware from China and the European region.}}  
+      \resumeItemListEnd  
+
+    % copy and paste above resumeSubheading block to add more 
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+ %-----------PROJECTS-----------
+\section{\color{airforceblue}OPEN SOURCE PROJECTS}    
+    \resumeItemListStart
+        \vspace{0.5pt}
+        \resumeItem{\normalsize{\textbf{Movie Recommendation : NLP -}, 
+          EDA performed on raw tmdb movies dataset,text preprocessing applied on movies description,crew,audience feed back etc... vectorized the text with help of TFiDF Transformers and LSTM/cosnie similarity models employed to find the similar movies based on audinece input. Frontend of the Application develpoed with streamlite and deployed in heroku.  
+        } \href{[https://github.com/HarishKumarSedu/NLP_textPrepropsessing]}{\color{blue}\underline{GitHub}}}
+        \resumeItem{
+          \normalsize{\textbf{Sentiment Analysis : ML/NLP -},
+          Sentiment Analysis mainly performed on the twitter-tweets/Amazon/movies public reviews with different context positive/negative,covid,hired, the most challenging task is scraping the data and performing EDA. Sentiment analysis mainly from NN's and Ml algorithms.
+          } 
+          \href{[https://github.com/HarishKumarSedu/Tweet_senetiment_analysis_NLP]}{\color{blue}\underline{GitHub}}}
+
+        \resumeItem{\normalsize{\textbf{Complete Life Cycle of ML Project}, This is MlOps template project, where i had integrated different technologies -  setuptools,sklearn,Flask,YAML,Docker,MlFlow,CI-CD,kubernetes and GCP/AWS  } \href{[https://github.com/HarishKumarSedu/End_to_End_Ml]}{\color{blue}\underline{GitHub}}}
+        \vspace{0.5pt}
+        % copy and paste above resumeItem block to add more 
+        
+    \resumeItemListEnd  
+   
+ \vspace{-12pt}
+%
+%-----------Publications---------------
+\section{\color{airforceblue}THESIS/PUBLICATIONS}
+    
+  \resumeItemListStart
+    \resumeItem{\textbf{Master Thesis (\textit{Jan/2022 - Dec/2022})} - \textbf{SoC and SoH estimation for Li-Ion Batteries with Neural Networks and Statistical Methods}
+    \normalsize{Determining the
+    SOC ad SOH of the Li-Ion batteries by employing the Conventional Coloumb countmethod and sophisticated Kalman
+    filter algorithms(UKF,EKF,AUKF and AI/ML) in a wireless
+    communication network(BLE)., ,}}\href{[https://github.com/HarishKumarSedu/Thesis/blob/main/main.pdf]}{\color{blue}\underline{Link}}
+    \vspace{-5pt}
+    
+    \resumeItem{
+      \textbf{Batchelors Thesis (\textit{Jan/2019 - Aug/2019})} - 
+      \textbf{Robotic Arm Control Using Haptic Glove,}
+      \normalsize{Controlling Haptic Glove actuation prediction with realtime Temperature, pressure and vission data. Pretrained Huge NN model incorporated in micro-controller(raspberry pi 3), and realtime data piplined/uploaded to database. Batch training is done based on object detection accuracy. }}\href{[https://github.com/HarishKumarSedu/Batchelors_Thesis_RoboticArm/blob/main/ROBOTIC_ARM_CONTO_%20USING_HAPTIC%20GLOVE_Report.pdf]}{\color{blue}\underline{Link}}
+    \vspace{-4pt}
+
+    \resumeItem{
+      \textbf{Diploma Thesis (\textit{Sep/2015 - April/2016})} - 
+      \textbf{3 Axis CNC PCB Milling Machine,}
+      \normalsize{The objective is to build a
+      low-cost high precision(3mm) 3-axis PCB milling machine,
+      which can support manual and advanced G-code., ,}}
+      \href{[https://github.com/HarishKumarSedu/Diploma_Thesis_CNC_MillingMAchine]}{\color{blue}\underline{Link}}
+    \vspace{-4pt}
+
+    % copy and paste above resumeItem block to add more 
+    
+  \resumeItemListEnd 
+      
+\vspace{-8pt}
+
+%-----------EXTRACURRICULAR---------------
+
+\end{document}
