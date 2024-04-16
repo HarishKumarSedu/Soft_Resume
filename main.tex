@@ -61,7 +61,8 @@
 % serif
 \usepackage{CormorantGaramond}
 \usepackage{charter}
-
+\usepackage{fontawesome5}
+\usepackage{tabto}
 % \pagestyle{fancy}
 % \fancyhf{}  % clear all header and footer fields
 % \fancyfoot{}
@@ -159,52 +160,68 @@
 
 \begin{center}
     {\huge Harish Kumar Shivaramappa } \\ \vspace{2pt} 
-    {+39 366 707 5414 / +91 900 808 8227} ~ 
+    \faIcon{phone} {+39 366 707 5414 / +91 900 808 8227} ~ 
     \small{-}
+    \faIcon{mail-bulk} \href{mailto:harishkumarsedu@gmail.com}{\color{blue}{harishkumarsedu@gmail.com}} ~ 
     \small{-}
-    \href{mailto:[harishkumarsedu@gmail.com]}{\color{blue}{harishkumarsedu@gmail.com}} ~ 
+    \faLinkedin \href{https://www.linkedin.com/in/harish-kumar-shivaramappa-183292206/}{ \color{blue}{linkedin}}  ~
     \small{-}
-    \href{[https://www.linkedin.com/in/harish-kumar-shivaramappa-183292206/]}{ \color{blue}{linkedin}}  ~
-    \small{-}
-    \href{[github.com/HarishKumarSedu]}{ \color{blue}{github}} ~
+    \faGithub \href{https://www.github.com/HarishKumarSedu}{ \color{blue}{git}} ~
+    \faIcon{search-location}{ \color{blue}{Milan,Italy}} ~
     \vspace{-7pt}
 \end{center}
 
 %-----------EDUCATION-----------
-\section{\color{airforceblue}EDUCATION}
+\section{\color{airforceblue}EDUCATION \faArchway}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of Pavia / Masters}{Pavia, Lombardia, Italy}
-      {Electronics and Computer Science }{Dec/2020 - Dec/2022}
+      { \faIcon{university}  University of Pavia / Masters}{Pavia, Lombardia, Italy}
+      {\hspace{1 cm} Electronics and Computer Science }{Dec/2020 - Dec/2022}
     \vspace{-4pt}
-     \resumeSubheading
-      {PES University / Batchelors}{Bengaluru, Karnataka, India}
-      {Electronics and Communication Engineering}{July/2016 - March/2019}
-      \vspace{-4pt}
-      \resumeSubheading
-       {SJ Polytechnic / Diploma}{Bengaluru, Karnataka, India}
-       {Electronics and Communication Engineering}{April/2013 - March/2016}
   \resumeSubHeadingListEnd
   \vspace{-10pt}
 
 %-----------PROGRAMMING SKILLS-----------
-\section{\color{airforceblue}TECHNICAL SKILLS}
+\section{\color{airforceblue}TECHNICAL SKILLS \faIcon{tools}}
  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
      \textbf{\normalsize{Programming Languages:}}{ \normalsize{Python, JavaScript, C}} \\
-      \vspace{1.2pt}
-      
-     \textbf{\normalsize{Libraries and Tools:}}{ \normalsize{tensorflow,  Sklearn, Pandas, Numpy, Git, Docker, Scapy, nltk, Scipy,Seaborn, YAML}} \\
-      \vspace{1.2pt}
-      
-     \textbf{\normalsize{ML Architectures:}}{ \normalsize{CNN, Transformers(BERT, LSTM, GRU), GANs, Seq2Seq }}
-      
-     \textbf{\normalsize{GUI/Rest API:}}{ \normalsize{ PyQt, Flask, Fast API, Django }}
+     \textbf{\normalsize{Libraries and Tools:}}{ \normalsize{tensorflow,  Sklearn, Pandas, Numpy, Scapy, nltk, Scipy,Seaborn, YAML}} \\
+     \textbf{\normalsize{ML Architectures:}}{ \normalsize{CNN, Transformers(BERT, LSTM, GRU), GANs, Seq2Seq }} \\
+     \textbf{\normalsize{GUI/Rest API:}}{ \normalsize{ PyQt, Flask, Fast API, Django }}\\
+     \textbf{\normalsize{MlOps/Devops :}}{ \normalsize{ MlFlow, github, github actions, gitea, Docker, Jenkins, Yaml scheme, prometheus, grafana,  }}\\
+     \textbf{\normalsize{Database :}}{ \normalsize{ AWS - EC2, S3 sagemaker, GCP }}\\
 
      % copy and paste above textbf block to add more 
      }}
  \end{itemize}
  \vspace{-16pt}
+  %-----------PROJECTS-----------
+\section{\color{airforceblue}OPEN SOURCE PROJECTS \faIcon{project-diagram}}    
+\resumeItemListStart
+  \resumeItem{\normalsize{\textbf{MlOps/AIops Teaching assitant Oct/2023 -}, Teaching assitant/lab tutor in private University,
+    my responsiblities include to develop teaching material for mlops course from basics to experti and 
+    assist students with lab experiments. 
+    Here i have complete repository of teaching material 
+    \href{https://github.com/HarishKumarSedu/MlOps_Repo}{\color{blue}\underline{mlOps - repo}} 
+    from packaging Ml app - CI-CT-CD pipeline to deploying .}}
+    \vspace{0.5pt}
+    \resumeItem{\normalsize{\textbf{Movie Recommendation : NLP -}, 
+      EDA performed on raw tmdb movies dataset,text preprocessing applied on movies description,crew,audience feed back etc... vectorized the text with help of TFiDF Transformers and LSTM/cosnie similarity models employed to find the similar movies based on audinece input. Frontend of the Application develpoed with streamlite and deployed in heroku.  
+    } \href{https://github.com/HarishKumarSedu/NLP_textPrepropsessing}{\color{blue}\underline{GitHub}}}
+    \resumeItem{
+      \normalsize{\textbf{Sentiment Analysis : ML/NLP -},
+      Sentiment Analysis mainly performed on the twitter-tweets/Amazon/movies public reviews with different context - positive/negative, covid, hired. 
+      The challenging task is to scrape data from opensource web, creating custom dataset and performing EDA. NN's and Ml algorithms employed to perform Sentiment analysis.
+      } 
+      \href{https://github.com/HarishKumarSedu/Tweet_senetiment_analysis_NLP}{\color{blue}\underline{GitHub}}}
+
+    \resumeItem{\normalsize{\textbf{Complete Life Cycle of ML Project}, This is MlOps template project, where i had integrated different technologies -  setuptools,sklearn,Flask,YAML,Docker,MlFlow,CI-CD,kubernetes and GCP/AWS  } \href{https://github.com/HarishKumarSedu/End_to_End_Ml}{\color{blue}\underline{End to End Ml}}}
+
+    \vspace{0.5pt}
+    % copy and paste above resumeItem block to add more 
+    
+\resumeItemListEnd  
  
  %-----------EXPERIENCE-----------
 \section{\color{airforceblue}WORK EXPERIENCE}
@@ -212,26 +229,26 @@
 
     \resumeSubheading
       {Software Application Engineer}{} 
-      {\textbf{\textit{Inventvm Semiconductor Srl, Lombardia, Italy}}}{Jan/2022 - Current}
+      {\textbf{\textit{  Inventvm Semiconductor Srl}}, \faIcon{map-marker-alt} Lombardia, Italy}{\faIcon{calendar-alt} Jan/2022 - Current}
       \resumeItemListStart
             \resumeItem{
               \normalsize{Responsible for developing full-fledge \textbf{Semiconductor Chips Data Analysis/Collection Software Platform} for application and validation engineers.
                This includes owning complete project and \textbf{\textit{creating distributed Data pipeline, Data visualization/Analysis GUIs}}. 
-               Most noteable project in the organization is \href{[https://github.com/HarishKumarSedu/Franco_FrameWork]}{\color{blue}\underline{Franco}} which is power and audio application, where i have been  software team lead to develope \textbf{\textit{end-end ML/Data project}} for audio application.  
+               Most noteable project in the organization is \href{https://github.com/HarishKumarSedu/Franco_FrameWork}{\color{blue}\underline{Franco}} which is power and audio application, where i have been  software team lead to develope \textbf{\textit{end-end ML/Data project}} for audio application.  
                 }
               }
       \resumeItemListEnd  
 
     \resumeSubheading
       {Application Engineer}{} 
-      {\textbf{\textit{Analog Devices Inc, Karnataka, India}}}{Jan/2019 - July/2020}
+      {\textbf{\textit{Analog Devices Inc,}} \faIcon{map-marker-alt} Karnataka, India}{\faIcon[regular]{calendar-alt} Jan/2019 - July/2020}
       \resumeItemListStart
             \resumeItem{
               \normalsize{ADI is an
               estimated institution that offered me an opportunity to handle several projects over a period. I can recall a few notable
               projects from the organization, CBM (Condition-based Monitoring) for windmills, Burnside California state forest wildfire
               protection with IoT application, Developing the python-based
-              test bench for wireless product evaluation, and supporting post
+              test bench for wireless products parametric evaluation, and supporting post
               silicon evaluation for WBMS(wireless BMS) chips. Daily tasks
               include resolving customer queries related to wireless network
               hardware from China and the European region.}}  
@@ -239,45 +256,24 @@
 
     % copy and paste above resumeSubheading block to add more 
   \resumeSubHeadingListEnd
-\vspace{-12pt}
-
-
- %-----------PROJECTS-----------
-\section{\color{airforceblue}OPEN SOURCE PROJECTS}    
-    \resumeItemListStart
-        \vspace{0.5pt}
-        \resumeItem{\normalsize{\textbf{Movie Recommendation : NLP -}, 
-          EDA performed on raw tmdb movies dataset,text preprocessing applied on movies description,crew,audience feed back etc... vectorized the text with help of TFiDF Transformers and LSTM/cosnie similarity models employed to find the similar movies based on audinece input. Frontend of the Application develpoed with streamlite and deployed in heroku.  
-        } \href{[https://github.com/HarishKumarSedu/NLP_textPrepropsessing]}{\color{blue}\underline{GitHub}}}
-        \resumeItem{
-          \normalsize{\textbf{Sentiment Analysis : ML/NLP -},
-          Sentiment Analysis mainly performed on the twitter-tweets/Amazon/movies public reviews with different context positive/negative,covid,hired, the most challenging task is scraping the data and performing EDA. Sentiment analysis mainly from NN's and Ml algorithms.
-          } 
-          \href{[https://github.com/HarishKumarSedu/Tweet_senetiment_analysis_NLP]}{\color{blue}\underline{GitHub}}}
-
-        \resumeItem{\normalsize{\textbf{Complete Life Cycle of ML Project}, This is MlOps template project, where i had integrated different technologies -  setuptools,sklearn,Flask,YAML,Docker,MlFlow,CI-CD,kubernetes and GCP/AWS  } \href{[https://github.com/HarishKumarSedu/End_to_End_Ml]}{\color{blue}\underline{GitHub}}}
-        \vspace{0.5pt}
-        % copy and paste above resumeItem block to add more 
-        
-    \resumeItemListEnd  
-   
+  
  \vspace{-12pt}
 %
 %-----------Publications---------------
-\section{\color{airforceblue}THESIS/PUBLICATIONS}
+\section{\color{airforceblue}THESIS/PUBLICATIONS \faIcon{book}}
     
   \resumeItemListStart
     \resumeItem{\textbf{Master Thesis (\textit{Jan/2022 - Dec/2022})} - \textbf{SoC and SoH estimation for Li-Ion Batteries with Neural Networks and Statistical Methods}
     \normalsize{Determining the
     SOC ad SOH of the Li-Ion batteries by employing the Conventional Coloumb countmethod and sophisticated Kalman
     filter algorithms(UKF,EKF,AUKF and AI/ML) in a wireless
-    communication network(BLE)., ,}}\href{[https://github.com/HarishKumarSedu/Thesis/blob/main/main.pdf]}{\color{blue}\underline{Link}}
+    communication network(BLE)., ,}}\href{https://github.com/HarishKumarSedu/Thesis/blob/main/main.pdf}{\color{blue}\underline{Link}}
     \vspace{-5pt}
     
     \resumeItem{
       \textbf{Batchelors Thesis (\textit{Jan/2019 - Aug/2019})} - 
       \textbf{Robotic Arm Control Using Haptic Glove,}
-      \normalsize{Controlling Haptic Glove actuation prediction with realtime Temperature, pressure and vission data. Pretrained Huge NN model incorporated in micro-controller(raspberry pi 3), and realtime data piplined/uploaded to database. Batch training is done based on object detection accuracy. }}\href{[https://github.com/HarishKumarSedu/Batchelors_Thesis_RoboticArm/blob/main/ROBOTIC_ARM_CONTO_%20USING_HAPTIC%20GLOVE_Report.pdf]}{\color{blue}\underline{Link}}
+      \normalsize{Controlling Haptic Glove actuation prediction with realtime Temperature, pressure and vission data. Pretrained Neural Networks (NN) model incorporated in micro-controller(raspberry pi 3), and realtime data piplined implemented with database. Batch training is done based on object detection accuracy. }}\href{https://github.com/HarishKumarSedu/Batchelors_Thesis_RoboticArm/blob/main/ROBOTIC_ARM_CONTO_%20USING_HAPTIC%20GLOVE_Report.pdf}{\color{blue}\underline{Link}}
     \vspace{-4pt}
 
     \resumeItem{
@@ -286,7 +282,7 @@
       \normalsize{The objective is to build a
       low-cost high precision(3mm) 3-axis PCB milling machine,
       which can support manual and advanced G-code., ,}}
-      \href{[https://github.com/HarishKumarSedu/Diploma_Thesis_CNC_MillingMAchine]}{\color{blue}\underline{Link}}
+      \href{https://github.com/HarishKumarSedu/Diploma_Thesis_CNC_MillingMAchine}{\color{blue}\underline{Link}}
     \vspace{-4pt}
 
     % copy and paste above resumeItem block to add more 
